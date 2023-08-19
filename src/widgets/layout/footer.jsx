@@ -21,6 +21,13 @@ export function Footer({ brandName, brandLink, routes }) {
           for a better web.
         </Typography>
         <ul className="flex items-center gap-4">
+          <li> <Typography
+            as="p"
+            variant="small"
+            className="py-0.5 px-1 font-normal text-inherit transition-colors text-bg-900"
+          >
+            Feel Free to use it with Promise of 100% Data Privacy
+          </Typography> </li>
           {routes.map(({ name, path }) => (
             <li key={name}>
               <Typography
