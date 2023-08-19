@@ -1,0 +1,35 @@
+/* Color Theme Swatches in Hex */
+$The-Biggest-Lie-1-hex: #3D3D3D;
+$The-Biggest-Lie-2-hex: #84B026;
+$The-Biggest-Lie-3-hex: #217373;
+$The-Biggest-Lie-4-hex: #173540;
+$The-Biggest-Lie-5-hex: #161F30;
+
+/* Color Theme Swatches in RGBA */
+$The-Biggest-Lie-1-rgba: rgba(61, 61, 61, 1);
+$The-Biggest-Lie-2-rgba: rgba(132, 175, 37, 1);
+$The-Biggest-Lie-3-rgba: rgba(33, 114, 114, 1);
+$The-Biggest-Lie-4-rgba: rgba(22, 53, 63, 1);
+$The-Biggest-Lie-5-rgba: rgba(21, 31, 47, 1);
+
+/* Color Theme Swatches in HSLA */
+$The-Biggest-Lie-1-hsla: hsla(0, 0, 24, 1);
+$The-Biggest-Lie-2-hsla: hsla(79, 64, 41, 1);
+$The-Biggest-Lie-3-hsla: hsla(180, 55, 29, 1);
+$The-Biggest-Lie-4-hsla: hsla(195, 47, 16, 1);
+$The-Biggest-Lie-5-hsla: hsla(219, 37, 13, 1);
+
+$bgColor: $The-Biggest-Lie-1-hex;
+$text: $The-Biggest-Lie-2-hex;
+$light: #F2F2F2;
+$dark: #0D0D0D;
+$grey: #D9D9D9;
+$grayDark: #4F5259;
+
+* {
+    color: $text;
+}
+
+.app-bg-dark {
+    background-color: $dark;
+}
