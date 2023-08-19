@@ -7,10 +7,10 @@ export function Footer({ brandName, brandLink, routes }) {
 
   return (
     <footer className="py-2">
-      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
+      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between text-bg-800">
         <Typography variant="small" className="font-normal text-inherit">
           &copy; {year}, made with{" "}
-          <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5 text-danger-500" /> by{" "}
+          <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5 fill-danger-500" /> by{" "}
           <a
             href={brandLink}
             target="_blank"
