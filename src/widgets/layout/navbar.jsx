@@ -89,7 +89,7 @@ Navbar.defaultProps = {
       href="https://bit.ly/ronakjain2012"
       target="_blank"
     >
-      <Button size="sm" fullWidth className="bg-green-500" color="red">
+      <Button size="sm" fullWidth className="bg-green-500 text-light-500 hover:shadow-primary-100 border-none shadow-sm shadow-primary-500">
         Portfolio
       </Button>
     </a>
