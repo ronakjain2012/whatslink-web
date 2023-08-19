@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   Card,
   CardHeader,
@@ -13,7 +12,7 @@ import { useEffect, useState } from "react";
 import countries from "@/data/countries";
 import { getPositionData } from "@/services";
 import Select from 'react-select'
-import { getWhatsappUrl, removeSpecialCharacters } from "@/utils";
+import { ga, getWhatsappUrl, removeSpecialCharacters } from "@/utils";
 
 export function AppIndex() {
   const countriesOption = countries.map(e => {
@@ -41,6 +40,7 @@ export function AppIndex() {
     const phoneCode = countries.find((c) => c.iso3 === countryCode)?.phone_code;
     const fullNumber = `${phoneCode}${mobile}`;
     const url = getWhatsappUrl(removeSpecialCharacters(fullNumber), message);
+    ga(window.document.title,'app-use','whatsapp-event','whatsapp-open',fullNumber)
     window.open(url, "_blank");
   };
 
