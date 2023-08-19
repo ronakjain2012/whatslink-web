@@ -40,8 +40,10 @@ export function AppIndex() {
     const phoneCode = countries.find((c) => c.iso3 === countryCode)?.phone_code;
     const fullNumber = `${phoneCode}${mobile}`;
     const url = getWhatsappUrl(removeSpecialCharacters(fullNumber), message);
-    ga(window.document.title,'app-use','whatsapp-event','whatsapp-open',fullNumber)
-    window.open(url, "_blank");
+    ga(window.document.title, 'app-use', 'whatsapp-event', 'whatsapp-open')
+    setTimeout(function () {
+      window.location = url;
+    }, 500);
   };
 
 
@@ -71,10 +73,6 @@ export function AppIndex() {
               <Button fullWidth className="text-light-400 bg-primary-700 shadow-outline hover:shadow-dark-400/50" type="submit">
                 Send Message
               </Button>
-
-              <p>{mobile}</p>
-              <p>{message}</p>
-              <p>{countryCode}</p>
             </CardFooter>
           </Card>
         </form>

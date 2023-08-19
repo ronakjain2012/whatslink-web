@@ -5,7 +5,7 @@ export function removeSpecialCharacters(value) {
 }
 
 export function getWhatsappUrl(phone, text) {
-    let url = `https://wa.me/send?`;
+    let url = `whatsapp://send?`;
     if (phone) {
         url += `phone=${phone}`
     }
