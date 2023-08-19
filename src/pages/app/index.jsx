@@ -71,6 +71,10 @@ export function AppIndex() {
               <Button fullWidth className="text-light-400 bg-primary-700 shadow-outline hover:shadow-dark-400/50" type="submit">
                 Send Message
               </Button>
+
+              <p>{mobile}</p>
+              <p>{message}</p>
+              <p>{countryCode}</p>
             </CardFooter>
           </Card>
         </form>
