@@ -7,10 +7,10 @@ export function Footer({ brandName, brandLink, routes }) {
 
   return (
     <footer className="py-2">
-      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
+      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between text-bg-800">
         <Typography variant="small" className="font-normal text-inherit">
           &copy; {year}, made with{" "}
-          <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5" /> by{" "}
+          <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5 fill-danger-500" /> by{" "}
           <a
             href={brandLink}
             target="_blank"
@@ -21,6 +21,13 @@ export function Footer({ brandName, brandLink, routes }) {
           for a better web.
         </Typography>
         <ul className="flex items-center gap-4">
+          <li> <Typography
+            as="p"
+            variant="small"
+            className="py-0.5 px-1 font-normal text-inherit transition-colors text-bg-900"
+          >
+            Feel Free to use it with Promise of 100% Data Privacy
+          </Typography> </li>
           {routes.map(({ name, path }) => (
             <li key={name}>
               <Typography
@@ -41,13 +48,13 @@ export function Footer({ brandName, brandLink, routes }) {
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "https://www.creative-tim.com",
+  brandName: "Ronak Bokaria (@ronakjain2012) ",
+  brandLink: "https://bit.ly/ronakjain2012",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
-    { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
-    { name: "License", path: "https://www.creative-tim.com/license" },
+    // { name: "Creative Tim", path: "https://www.creative-tim.com" },
+    // { name: "About Us", path: "https://www.creative-tim.com/presentation" },
+    // { name: "Blog", path: "https://www.creative-tim.com/blog" },
+    // { name: "License", path: "https://www.creative-tim.com/license" },
   ],
 };
 

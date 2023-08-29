@@ -9,6 +9,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ga } from "@/utils";
 
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
@@ -88,8 +89,9 @@ Navbar.defaultProps = {
     <a
       href="https://bit.ly/ronakjain2012"
       target="_blank"
+      onClick={()=>ga(window.document.title,'self-promotion','download','portfolio-visit','-')}
     >
-      <Button size="sm" fullWidth className="bg-green-500" color="red">
+      <Button size="sm" fullWidth className="bg-green-500 text-light-500 hover:shadow-primary-100 border-none shadow-sm shadow-primary-500">
         Portfolio
       </Button>
     </a>
